@@ -6,13 +6,11 @@ import ast
 def show(metadata):
     st.header("🤖 Model Performance & Internals")
     
+    # Model Selection
     model_names = list(metadata['models'].keys())
+    selected_model = st.selectbox("Select a Model to Inspect", model_names)
     
-    # Use st.pills for a cleaner, modern selection UI
-    selected_model = st.pills("Select a Model to Inspect", model_names, selection_mode="single", default=model_names[-1])
-    
-    if selected_model:
-        model_data = metadata['models'][selected_model]
+    model_data = metadata['models'][selected_model]
     
     # 1. Hyperparameters
     with st.expander("⚙️ Model Hyperparameters", expanded=False):
