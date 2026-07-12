@@ -124,9 +124,3 @@ The application is divided into three functional tabs:
 - Input patient details using the sidebar form (Age, Glucose Level, BMI, Smoking Status, etc.).
 - Select the model you wish to use for prediction (e.g., XGBoost).
 - Click "Analyze Patient Data" to get a real-time risk assessment (Low Risk / High Risk) with the probability score.
-
----
-
-**Submitted by:** Yerramsetty Nishitha
-
-**ID:** 2024DC04261
